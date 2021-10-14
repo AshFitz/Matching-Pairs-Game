@@ -1,0 +1,23 @@
+html {
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-color: red;
+    justify-content: center;
+}
+
+.card {
+    height:200px;
+}
+
