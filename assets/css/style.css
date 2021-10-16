@@ -1,10 +1,24 @@
 html {
-    background-color: white;
-    color: black;
+    background-color: black;
+    font-family: 'Playball', cursive;
 }
 
 h1 {
     text-align: center;
+    font-size: 4.5em;
+    color: rgb(246, 234, 176);
+    margin: 20px 0 20px 0;
+}
+
+
+.game-details {
+    color:rgb(246, 234, 176);
+    font-size: 2.5em;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+   
 }
 
 .grid-container {
@@ -13,7 +27,8 @@ h1 {
     grid-template-rows: auto auto auto auto;
     grid-column-start: 1;
     grid-column-end: 9;
-    background-color: red;
+    grid-gap: 25px;
+    background-color: black;
     justify-content: center;
 }
 
