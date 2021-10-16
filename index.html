@@ -12,7 +12,7 @@
     <title>Match The Pairs</title>
 </head>
 <body>
-
+    <div class="overlay"></div>
     <h1>Match The Pairs</h1>
 
     <!--Overall container-->
@@ -24,13 +24,15 @@
     </div>
       <!--Victory Text-->
       <div class="victory-container">
-        <div class="victory-text pop-up-text">Victory!   
+        <div class="victory-text pop-up-text">Victory!  
+            <div class="restart-text">Click To Restart</div> 
         </div>
     </div>
      </div>
       <!--Try Again Text-->
       <div class="try-again-container">
         <div class="try-again-text pop-up-text">Try Again!   
+            <div class="restart-text">Click To Restart</div> 
         </div>
     </div>
     <!--Game details container for timer, flips and user name-->
@@ -45,7 +47,7 @@
     
         <!--cards-->S
         <div class="grid-container">
-            <div class="grid-item"><img src="assets/images/back.PNG" alt="Card-1" class="card"></div>
+            <div class="grid-item"><img src="assets/images/back.PNG" alt="Card-1" class="card hide"></div>
             <div class="grid-item"><img src="assets/images/back.PNG" alt="Card-1" class="card"></div>
             <div class="grid-item"><img src="assets/images/back.PNG" alt="Card-1" class="card"></div>
             <div class="grid-item"><img src="assets/images/back.PNG" alt="Card-1" class="card"></div>
@@ -65,6 +67,8 @@
     
     </div>
 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
