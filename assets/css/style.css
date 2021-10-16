@@ -10,7 +10,7 @@ h1 {
     margin: 20px 0 20px 0;
 }
 
-.start-text {
+.pop-up-text {
     color:rgb(246, 234, 176);
     text-align: center;
     font-size: 8em;
@@ -18,17 +18,27 @@ h1 {
     top: 225px;
 }
 
+.start-text {
+    display: none;
+}
 
+.victory-text {
+    display: none;
+}
+
+.try-again-text {
+    display: none;
+}
 
 .game-details {
     color:rgb(246, 234, 176);
     font-size: 2.5em;
-    display: none;
+    display: flex;
     justify-content: space-evenly;  
 }
 
 .grid-container {
-    display: none;
+    display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
     grid-column-start: 1;
