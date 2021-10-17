@@ -26,6 +26,14 @@ h1 {
 
 }
 
+.backcard {
+    display: none;
+}
+
+.facecard {
+    display: grid;
+}
+
 .pop-up-text {
     color:rgb(246, 234, 176);
     text-align: center;
