@@ -1,41 +1,50 @@
 // Variables
-let cards = Array.from(document.getElementsByClassName('card'));
+let cards = Array.from(document.getElementsByClassName('cards'));
 let flips = 0;
 let timer = document.getElementById('game-timer');
-let timeLeft = 0;
+let timeLeft = 90;
 let pairedCards = [];
-let canClick = false;
-
-
-
+let canClick = true;
 let cardsArray = cards;
 
-console.log(cards);
-//timer
+console.log(cardsArray)
+function startGame() { 
+    flips;
+    pairedCards;
+    setTimeout(() =>{
+        shuffleCards(cardsArray);
+        canClick = false;
+        timeRemaining();
+    },500)
+}
 
-function shuffleCards(cardsArray) { // Fisher-Yates Shuffle Algorithm.
+startGame();
+
+
+// Fisher-Yates Shuffle Algorithm.
+function shuffleCards(cardsArray) { 
     for (let i = cardsArray.length - 1; i > 0; i--) {
         let randIndex = Math.floor(Math.random() * (i + 1));
         cardsArray[randIndex].style.order = i;
         cardsArray[i].style.order = randIndex;
+        console.log(cardsArray[i])
     }
 }
 
 shuffleCards(cardsArray);
 
+//timer count down
+
 function timeRemaining() {
     return setInterval(() => {
-        timeLeft++;
-        console.log(timeLeft)
-        timer.innerText = timeLeft;
-        if(timeLeft === 60)
-            timeRemaining();
+            timeLeft--;
+            timer.innerText = timeLeft;
+            if (timeLeft === 0)
+                timeLeft = 90;
 
-    },1000);
+        },1000);
 }
 
-timeRemaining();
-console.log("test timer",timeRemaining())
 
 // function startGame(){
 //     let i;
