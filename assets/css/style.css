@@ -15,6 +15,10 @@ h1 {
     
 }
 
+.show {
+    display:grid;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -26,13 +30,42 @@ h1 {
 
 }
 
-.backcard {
+
+.card {
+    height:200px;
+    border-color: rgb(246, 234, 176);
+    border-radius: 6px;
+    border-style: solid;
+}
+
+.cards {
+    position: relative;
+}
+
+
+.front-card {
+    display: grid;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.cards.visible .front-card {
+    transform: rotateY(0);  
+}
+
+.cards.visible .back-card {
+    transform: rotateY(-180deg);
     display: none;
 }
 
-.facecard {
+.back-card {
     display: grid;
+    transform: rotateY(0);
 }
+
+
+
 
 .pop-up-text {
     color:rgb(246, 234, 176);
@@ -42,6 +75,10 @@ h1 {
     right: 40%;
     top: 40%;
     z-index: 2;
+}
+
+.restart-text {
+    color: rgb(209, 179, 112);
 }
 
 .start-text {
@@ -61,7 +98,7 @@ h1 {
 }
 
 .game-details {
-    color:rgb(246, 234, 176);
+    color: rgb(209, 179, 112);
     font-size: 2.5em;
     display: flex;
     justify-content: space-evenly;  
@@ -78,12 +115,5 @@ h1 {
     grid-gap: 25px;
     background-color: black;
     justify-content: center;
-}
-
-.card {
-    height:200px;
-    border-color: rgb(246, 234, 176);
-    border-radius: 6px;
-    border-style: solid;
 }
 
