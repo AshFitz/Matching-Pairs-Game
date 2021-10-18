@@ -27,7 +27,6 @@ h1 {
     right: 0;
     z-index: 1;
     background-color: #0a0909b0;
-
 }
 
 
@@ -40,13 +39,21 @@ h1 {
 
 .cards {
     position: relative;
+    width: 100px;
+    height: 175px;
 }
 
+.grid-item {
+    transition: transform 400ms linear;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
 
 .front-card {
     display: grid;
     position: absolute;
-    backface-visibility: hidden;
     transform: rotateY(180deg);
 }
 
@@ -56,16 +63,12 @@ h1 {
 
 .cards.visible .back-card {
     transform: rotateY(-180deg);
-    display: none;
 }
 
 .back-card {
     display: grid;
     transform: rotateY(0);
 }
-
-
-
 
 .pop-up-text {
     color:rgb(246, 234, 176);
@@ -105,14 +108,10 @@ h1 {
 }
 
 .grid-container {
- 
     display: grid;
     grid-template-columns: repeat(4, auto);
-    /* grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto; */
-    /* grid-column-start: 1;
-    grid-column-end: 9; */
-    grid-gap: 25px;
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
     background-color: black;
     justify-content: center;
 }
