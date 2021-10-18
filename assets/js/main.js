@@ -39,7 +39,7 @@ function rotateCard(card) {
         card.classList.add('visible');
         if(verifyCard)
             // check the cards for a match
-            console.log("do this")
+            checkCardsMatch(card)
         else
             //assign current card (card) to the verify card
             
@@ -91,7 +91,18 @@ function getCard(card){
 }   
 
 
-function checkCardsMatch(card1, card2){
+function checkCardsMatch(card){
+    if(getCard(card) === getCard(verifyCard))
+        console.log("matched")
+    else
+        setTimeout(() => {
+            card.classList.remove('visible');
+            canClick = false;
+            
+        },500)
+        
+        console.log("didnt match")
 
+    verifyCard = null;    
 }
 
