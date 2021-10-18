@@ -37,8 +37,17 @@ function rotateCard(card) {
         flips++;
         flipCounter.innerText = flips;
         card.classList.add('visible');
+        if(verifyCard)
+            // check the cards for a match
+            console.log("do this")
+        else
+            //assign current card (card) to the verify card
+            
+            verifyCard = card;
+            console.log("current card", verifyCard)
+
     }
-    
+
 }
 
 
