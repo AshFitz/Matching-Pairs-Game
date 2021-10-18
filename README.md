@@ -1,6 +1,6 @@
 # Matching Pairs Game
 
-<p>
+<p> This game was created to test a users memory in a fun and interactive way. The user will be playing against a timer to match all the pairs of cards. It will also provide the user with the amount of flips they used to accomplish the game. The user will be able to play the game multiple times to try and achieve a better time and a lower number of flips.
 </p>
 
 ## User Experience:
