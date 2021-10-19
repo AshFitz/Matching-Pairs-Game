@@ -29,14 +29,17 @@
 ### User Stories:
 
 * As a site owner:
-    *
-    *
-    *
+    * I want a game that is easy to navigate and user friendly.
+    * I want the user to have fun while testing their memory.
+    * I want the game to be interactive.
+    * I want the user to play the game multiple times.
 
 * As a site user:
-    *
-    *
-    *
+    * I want to be able to test my memory in an enjoyable way.
+    * I want the game to be easily navigated.
+    * I want the game to be visually appealing.
+    * I want to be aware of the time and number of flips it took to accomplish the game.
+    * I want to play the game multiple times to challege myself and improve my memory.
 
 ### User Requirements and Expectations:
 <p>
