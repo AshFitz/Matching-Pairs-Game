@@ -23,7 +23,7 @@
 * The user must try and complete the game before the time runs out.
 * The user will be able to see how any flips it took them to complete the game.
 * Allow the user to play the game an unlimited amount of times. 
-* A user can challene themselves and try to beat their previous time and flips.
+* A user can challenge themselves and try to beat their previous time and flips.
 
 
 ### User Stories:
@@ -33,6 +33,7 @@
     * I want the user to have fun while testing their memory.
     * I want the game to be interactive.
     * I want the user to play the game multiple times.
+    * I want to have an easy to digest interface for the user.
 
 * As a site user:
     * I want to be able to test my memory in an enjoyable way.
@@ -64,7 +65,7 @@
 
 ### Fonts: 
 * (https://fonts.googleapis.com/css2?family=Playball&display=swap)
-<p> I chose this font for the game as it is really fits the theme and compliments the color scheme and content well.
+<p> I chose this font for the game as it is really suits the theme and compliments the color scheme and content well.
 </p>
 
 ### Icons:
