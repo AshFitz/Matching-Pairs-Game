@@ -27,7 +27,8 @@ function startGame() {
     setTimeout(() => {
             shuffleCards(cardsArray);
             canClick = false;
-            timeRemaining();
+            stopCounter = countdownTimer();
+
         },500)
 }
 startGame();
@@ -37,20 +38,15 @@ function rotateCard(card) {
         flips++;
         flipCounter.innerText = flips;
         card.classList.add('visible');
+
         if(verifyCard)
-            // check the cards for a match
             checkCardsMatch(card)
         else
             //assign current card (card) to the verify card
-            
             verifyCard = card;
-            console.log("current card", verifyCard)
-            console.log("saved array", pairedCards)
-
     }
 
 }
-
 
 // Fisher-Yates Shuffle Algorithm
 function shuffleCards(cardsArray) { 
@@ -61,17 +57,13 @@ function shuffleCards(cardsArray) {
     }
 }
 
-shuffleCards(cardsArray);
-
 // Timer count down function
-
-function timeRemaining() {
+function countdownTimer() {
     return setInterval(() => {
             timeLeft--;
             timer.innerText = timeLeft;
-            if (timeLeft === 0)
-                timeLeft = 90;
-
+            if (timeLeft === 0);
+                //gameOver();
         },1000);
 }
 
@@ -82,7 +74,7 @@ function resetCards() {
     })
 }
 
-function canFlipCard(card){
+function canFlipCard(card) {
     return true;
 }
 
@@ -92,21 +84,22 @@ function getCard(card){
 }   
 
 
-function checkCardsMatch(card){
+function checkCardsMatch(card) {
     if(getCard(card) === getCard(verifyCard))
         cardsMatch(card, verifyCard);
     else
         cardsDontMatch(card, verifyCard);
 
     verifyCard = null;    
+    console.log(cardsArray)
+    console.log(pairedCards)
 }
 
-function cardsDontMatch(card1, card2){
+function cardsDontMatch(card1, card2) {
     setTimeout(() => {
         card1.classList.remove('visible');
         card2.classList.remove('visible');
         canClick = false;
-        
     },1000)
 }
 
@@ -114,6 +107,18 @@ function cardsMatch(card1, card2) {
     pairedCards.push(card1);
     pairedCards.push(card2);
 
-    if(cards.length  == pairedCards.length);
-        console.log("game over")
+    if(pairedCards.length === cardsArray.length)
+        gameOver();
+}
+
+function gameOver() {
+    //reset timer
+
+    clearInterval(stopCounter);
+
+    //check if game is won
+
+
+    //check if game is lost
+
 }
