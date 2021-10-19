@@ -3,7 +3,7 @@ let cards = Array.from(document.getElementsByClassName('cards'));
 let flipCounter = document.getElementById('flips-counter');
 let flips;
 let timer = document.getElementById('game-timer');
-let timeLeft = 90;
+let timeLeft = 10;
 let pairedCards = [];
 let verifyCard = null;
 let canClick = true;
@@ -62,8 +62,9 @@ function countdownTimer() {
     return setInterval(() => {
             timeLeft--;
             timer.innerText = timeLeft;
-            if (timeLeft === 0);
-                //gameOver();
+            console.log(timer)
+            if (timeLeft == 0)
+                tryAgain()
         },1000);
 }
 
@@ -108,6 +109,7 @@ function cardsMatch(card1, card2) {
     pairedCards.push(card2);
 
     if(pairedCards.length === cardsArray.length)
+    //victory
         gameOver();
 }
 
@@ -121,4 +123,10 @@ function gameOver() {
 
     //check if game is lost
 
+}
+
+function tryAgain(){
+    //show try again div
+    clearInterval(stopCounter);
+    
 }
