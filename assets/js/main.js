@@ -45,6 +45,7 @@ function rotateCard(card) {
             
             verifyCard = card;
             console.log("current card", verifyCard)
+            console.log("saved array", pairedCards)
 
     }
 
@@ -93,11 +94,9 @@ function getCard(card){
 
 function checkCardsMatch(card){
     if(getCard(card) === getCard(verifyCard))
-        console.log("matched")
+        cardsMatch(card, verifyCard);
     else
-        cardsDontMatch(card, verifyCard)
-        
-        console.log("didnt match")
+        cardsDontMatch(card, verifyCard);
 
     verifyCard = null;    
 }
@@ -109,4 +108,12 @@ function cardsDontMatch(card1, card2){
         canClick = false;
         
     },1000)
+}
+
+function cardsMatch(card1, card2) {
+    pairedCards.push(card1);
+    pairedCards.push(card2);
+
+    if(cards.length  == pairedCards.length);
+        console.log("game over")
 }
