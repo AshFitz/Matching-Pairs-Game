@@ -42,18 +42,16 @@
     * I want to play the game multiple times to challege myself and improve my memory.
 
 ### User Requirements and Expectations:
-<p>
-</p>
 
 ### Requirements:
-*
-*
-*
+* The game to be visually appealing and easy to navigate.
+* A game that tests memory.
+* When the game ends a user is made aware if the game was accomplished or not.
 
 ### Expectations:
-*
-*
-*
+* The game to have a particular theme.
+* A game that provides you with information in order to challege your memory further.
+* A game that can be payed an unlimmited amount of times.
 
 ## Design Choices:
 <p>
