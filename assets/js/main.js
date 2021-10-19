@@ -95,14 +95,18 @@ function checkCardsMatch(card){
     if(getCard(card) === getCard(verifyCard))
         console.log("matched")
     else
-        setTimeout(() => {
-            card.classList.remove('visible');
-            canClick = false;
-            
-        },500)
+        cardsDontMatch(card, verifyCard)
         
         console.log("didnt match")
 
     verifyCard = null;    
 }
 
+function cardsDontMatch(card1, card2){
+    setTimeout(() => {
+        card1.classList.remove('visible');
+        card2.classList.remove('visible');
+        canClick = false;
+        
+    },1000)
+}
