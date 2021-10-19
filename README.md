@@ -54,12 +54,17 @@
 * A game that can be payed an unlimmited amount of times.
 
 ## Design Choices:
-<p>
+<p> The design of this game must to be simple and clean to ensure the user in not distracted while playing the game. The colours must be applealing and bold, so the cards are easily distinguishable. The design will ensure the site is easily navigated which will result in users playing mutliple times and returning.
 </p>
 
+### Theme:
+<p> I chose a particular theme for this game which is tarot card themed. This is an elegant an unquie theme. It has a playful spin on the cards aspect of the game. 
+</p>
+
+
 ### Fonts: 
-*
-<p>
+* (https://fonts.googleapis.com/css2?family=Playball&display=swap)
+<p> I chose this font for the game as it is really fits the theme and compliments the color scheme and content well.
 </p>
 
 ### Icons:
