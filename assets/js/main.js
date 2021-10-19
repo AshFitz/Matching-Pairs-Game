@@ -1,9 +1,13 @@
 // Global scope Variables
 let cards = Array.from(document.getElementsByClassName('cards'));
+let overlay = document.getElementsByClassName('overlay')[0];
+let tryAgainText = document.getElementsByClassName('try-again-container')[0];
+let victoryText = document.getElementsByClassName('victory-container')[0];
+let overallScore = document.getElementsByClassName('score-overall')[0]
 let flipCounter = document.getElementById('flips-counter');
 let flips;
 let timer = document.getElementById('game-timer');
-let timeLeft = 10;
+let timeLeft;
 let pairedCards = [];
 let verifyCard = null;
 let canClick = true;
@@ -13,8 +17,13 @@ let cardsArray = cards;
 // Start game function to initialise the components for the game
 function startGame() { 
     flips = 0;
+    timeLeft = 120;
     pairedCards;
-    console.log(pairedCards);
+    resetCards();
+    overlay.classList.add('hide');
+    tryAgainText.classList.remove('show');
+    victoryText.classList.remove('show')
+
 
     cards.forEach((card) => {
             card.addEventListener('click', () => {
@@ -29,7 +38,7 @@ function startGame() {
             canClick = false;
             stopCounter = countdownTimer();
 
-        },500)
+        },1000)
 }
 startGame();
 
@@ -115,18 +124,15 @@ function cardsMatch(card1, card2) {
 
 function gameOver() {
     //reset timer
-
     clearInterval(stopCounter);
-
-    //check if game is won
-
-
-    //check if game is lost
-
+    overlay.classList.remove("hide");
+    victoryText.classList.add('show');
+    overallScore.innerText = flips;
 }
 
 function tryAgain(){
     //show try again div
     clearInterval(stopCounter);
-    
+    overlay.classList.remove("hide");
+    tryAgainText.classList.add('show');
 }
