@@ -16,7 +16,7 @@ h1 {
 }
 
 .show {
-    display:grid;
+    display:grid!important;
 }
 
 .overlay {
@@ -81,6 +81,13 @@ h1 {
 }
 
 .restart-text {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    z-index: 2;
+    top: 70%;
+    font-size: 3em;
+    right: 30%;
     color: rgb(209, 179, 112);
 }
 
@@ -88,11 +95,11 @@ h1 {
     display: none;
 }
 
-.victory-text {
-    display: display;
+.victory-container{
+    display: none;
 }
 
-.try-again-text {
+.try-again-container {
     display: none;
 }
 
