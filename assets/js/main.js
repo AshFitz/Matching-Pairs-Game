@@ -4,6 +4,7 @@ let overlay = document.getElementsByClassName('overlay')[0];
 let tryAgainText = document.getElementsByClassName('try-again-container')[0];
 let victoryText = document.getElementsByClassName('victory-container')[0];
 let overallScore = document.getElementsByClassName('score-overall')[0]
+let startContainer = document.getElementsByClassName('start-container')[0];
 let flipCounter = document.getElementById('flips-counter');
 let timer = document.getElementById('game-timer');
 let flips;
@@ -21,7 +22,7 @@ function startGame() {
     timeLeft = 90;
     pairedCards;
     resetCards();
-    overlay.classList.add('hide');
+    
     tryAgainText.classList.remove('show');
     victoryText.classList.remove('show')
     // For each card found in cards array add an e listener when clicked call rotatecard func passing in the e card.
@@ -36,8 +37,11 @@ function startGame() {
             shuffleCards(cardsArray);
             canClick = false;
             stopCounter = countdownTimer();
+            overlay.classList.add('hide');
+            startContainer.classList.add('hide');
         },1000)
 }
+
 
 /*
 function to rotate a card when clicked wrapped in condition to handle user interaction, 
