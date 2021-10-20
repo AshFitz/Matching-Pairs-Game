@@ -5,10 +5,11 @@ html {
 
 #landing-text {
     text-align: center;
-    font-size: 4.5em;
-    color: rgb(246, 234, 176);
+    font-size: 6.5em;
     margin: 20px 0 20px 0;
     z-index: 2;
+    position: relative;
+    bottom: 100px;
 }
 
 .landing-text-container {
@@ -35,15 +36,15 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: #0a0909b0;
+    background-color: #0a0909d6;
 }
 
 
 .card {
     height:200px;
-    border-color: rgb(246, 234, 176);
-    border-radius: 6px;
-    border-style: solid;
+    border-color: rgb(209, 179, 112);
+    border-style: double;
+    border-radius: 5.5px;
 }
 
 .cards {
@@ -79,29 +80,24 @@ html {
     transform: rotateY(0);
 }
 
-.pop-up-text {
-    color:rgb(246, 234, 176);
-    text-align: center;
-    font-size: 8em;
-    position: absolute;
-    right: 40%;
-    top: 40%;
-    z-index: 2;
-}
-
-.restart-text {
-    position: absolute;
+.start-text {
+    position: inherit;
     text-align: center;
     justify-content: center;
     z-index: 2;
-    top: 70%;
     font-size: 3em;
-    right: 30%;
-    color: rgb(209, 179, 112);
+    cursor: pointer;
 }
 
 .score-overall {
     color: white;
+}
+.text-color-p {
+    color: rgb(209, 179, 112);
+}
+
+.text-color-s {
+    color: rgb(246, 234, 176);
 }
 
 .start-container {
