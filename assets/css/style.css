@@ -91,6 +91,10 @@ h1 {
     color: rgb(209, 179, 112);
 }
 
+.score-overall {
+    color: white;
+}
+
 .start-text {
     display: none;
 }
