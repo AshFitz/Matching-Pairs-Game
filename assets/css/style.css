@@ -3,16 +3,26 @@ html {
     font-family: 'Playball', cursive;
 }
 
-h1 {
+#landing-text {
     text-align: center;
     font-size: 4.5em;
     color: rgb(246, 234, 176);
     margin: 20px 0 20px 0;
+    z-index: 2;
+}
+
+.landing-text-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 
 .hide {
     display: none;
-    
 }
 
 .show {
@@ -20,9 +30,8 @@ h1 {
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    position: fixed;
+    height: 100%;
     left: 0;
     right: 0;
     z-index: 1;
@@ -95,8 +104,8 @@ h1 {
     color: white;
 }
 
-.start-text {
-    display: none;
+.start-container {
+    
 }
 
 .victory-container{
