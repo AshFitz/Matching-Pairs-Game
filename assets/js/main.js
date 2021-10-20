@@ -14,6 +14,7 @@ let canClick = true;
 let cardsArray = cards;
 
 
+
 // Start game function to initialise the components for the game
 function startGame() { 
     flips = 0;
@@ -23,7 +24,6 @@ function startGame() {
     overlay.classList.add('hide');
     tryAgainText.classList.remove('show');
     victoryText.classList.remove('show')
-
 
     cards.forEach((card) => {
             card.addEventListener('click', () => {
@@ -43,7 +43,7 @@ function startGame() {
 startGame();
 
 function rotateCard(card) {
-    if(canFlipCard(card)){
+    if(canClickCard(card)){
         flips++;
         flipCounter.innerText = flips;
         card.classList.add('visible');
@@ -84,10 +84,6 @@ function resetCards() {
     })
 }
 
-function canFlipCard(card) {
-    return true;
-}
-
 // Function to  return the card clicked src to be checked against another card
 function getCard(card){
     return card.getElementsByClassName('deck-card')[0].src;
@@ -106,6 +102,7 @@ function checkCardsMatch(card) {
 }
 
 function cardsDontMatch(card1, card2) {
+    canClick = true;
     setTimeout(() => {
         card1.classList.remove('visible');
         card2.classList.remove('visible');
@@ -135,4 +132,8 @@ function tryAgain(){
     clearInterval(stopCounter);
     overlay.classList.remove("hide");
     tryAgainText.classList.add('show');
+}
+
+function canClickCard(card) {
+    return !canClick && !pairedCards.includes(card) && card !== verifyCard;
 }
