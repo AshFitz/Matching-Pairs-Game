@@ -91,17 +91,17 @@
 ## Features:
 
 ### Features that have been developed:
-*<p> A timer, the user must work to complete the game before the time runs out.</p>
-*<p> A flip counter, to show the user how many flips it took them to complete the game.</p>
-*<p> A feature to prevent the user from clicking more cards while the current cards are being checked for a match.</p>
-*<p> A start game feature, to begin the game for the user.</p>
-*<p> A restart game feature, so the user can replay the game after the game ends.</p>
+* <p> A timer, the user must work to complete the game before the time runs out.</p>
+* <p> A flip counter, to show the user how many flips it took them to complete the game.</p>
+* <p> A feature to prevent the user from clicking more cards while the current cards are being checked for a match.</p>
+* <p> A start game feature, to begin the game for the user.</p>
+* <p> A restart game feature, so the user can replay the game after the game ends.</p>
 
 ### Features that will be implemented in the future:
-*<p> Smooth transitions with css to improve the user experience.</p>
-*<p> An option for the user to enter a username.</p>
-*<p> A leader board that holds the highest scoring players.</p>
-*<p> Audio, this would play at start game, victory and try again to increase the user experience.</p>
+* <p> Smooth transitions with css to improve the user experience.</p>
+* <p> An option for the user to enter a username.</p>
+* <p> A leader board that holds the highest scoring players.</p>
+* <p> Audio, this would play at start game, victory and try again to increase the user experience.</p>
 
 ## Planning and Testing:
 <p> The planning began by sketching the website on paper and then led to creating the wireframes. Creating the wireframes really helped me plan this project. It layed out what I wanted to achieve and you could visually see what would work and what wouldn't work.</p>
@@ -130,15 +130,15 @@
 </p>
 
 ### User Testing
-*<p> As a user who lands on the main page, I expect the heading of the game to give me an indication on what is required. This test passed as the heading explains I must try to find the matching pairs.</p>
-*<p> As a user I then expect to see an option to start the game. This test has passed as it loads the card and the timer begins.</p>
-*<p> As a user I expect the cards to flip when the are clicked. This test has passed as the cards roatate once they are clicked.</p>
-*<p> As a user I expect it to be clear when two cards are match. This test has passed as the matched cards stay visable to indicate a match and they can no longer be clicked.<p>
-*<p> As a user I expect it to be clear when two cards do not match. This test hass passed the the cards that do not match rotate back and they can be clicked again.</p>
-*<p> As a user I expect to be working against a timer. This test has passed, as soon I select to start the game the timer counds down from 90 seconds.</p>
-*<p> As a user I expect to see how many flips I have used while the game is in progress. This test has passed as the flip counter increases each time a card is selected.</p>
-*<p> As a user I expect to be made aware if the timer runs out. This test has passed as I am made aware I need to try again.</p>
-*<p> As a user I expect to know how I performed when the game is over. This test has passed as the I am made aware if I have succeeded and completed the game before the timer ran out.</p>
+* <p> As a user who lands on the main page, I expect the heading of the game to give me an indication on what is required. This test passed as the heading explains I must try to find the matching pairs.</p>
+* <p> As a user I then expect to see an option to start the game. This test has passed as it loads the card and the timer begins.</p>
+* <p> As a user I expect the cards to flip when the are clicked. This test has passed as the cards roatate once they are clicked.</p>
+* <p> As a user I expect it to be clear when two cards are match. This test has passed as the matched cards stay visable to indicate a match and they can no longer be clicked.<p>
+* <p> As a user I expect it to be clear when two cards do not match. This test hass passed the the cards that do not match rotate back and they can be clicked again.</p>
+* <p> As a user I expect to be working against a timer. This test has passed, as soon I select to start the game the timer counds down from 90 seconds.</p>
+* <p> As a user I expect to see how many flips I have used while the game is in progress. This test has passed as the flip counter increases each time a card is selected.</p>
+* <p> As a user I expect to be made aware if the timer runs out. This test has passed as I am made aware I need to try again.</p>
+* <p> As a user I expect to know how I performed when the game is over. This test has passed as the I am made aware if I have succeeded and completed the game before the timer ran out.</p>
 
 <p> This game was validated using a HTML, CSS validator and jshint. An additional Lighthouse audit was conducted via chrome dev tools. This helped to improve best practices and performance.</p>
 
