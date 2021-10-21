@@ -72,7 +72,7 @@
 *
 
 ### Colours:
-<p> I chose the colours below as they suit the theme of the game, which is tarot cards. They compliment themselves along with the images used for the cards. The content is clearly readable and the site navigates well due to the colours. It increases the appeal of the game and the user experience.
+ <p> I chose the colours below as they suit the theme of the game, which is tarot cards. They compliment themselves along with the images used for the cards. The content is clearly readable and the site navigates well due to the colours. It increases the appeal of the game and the user experience.
 </p>
 
 * Primary Colour: rgb(209, 179, 112) - Pastel gold, This is used for the heading, the victory text, try again text and the border colour for the card images.
@@ -111,7 +111,7 @@
 #### Feature Testing:
 
 ### Testing 
-<p>
+<p>  The testing carried out on this project was conducted using google chrome dev tools and basic user testing by myself to verify functionality. I originally built this project to be on a desktop screen and then tablet and then mobile. Testing was done throughout using the console and consol.logs within my js.
 </p>
 
 ### Bugs
