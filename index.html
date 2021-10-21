@@ -13,27 +13,25 @@
 </head>
 <body>
     <div class="overlay"></div>
-    
 
     <!--Overall container-->
     <div class= "overall-container">
     <!--Start Game-->
     <div class="start-container landing-text-container">
-        <h1 id="landing-text" class="text-color-p">Match The Pairs</h1>
+        <h1 class="text-color-p landing-text">Match The Pairs</h1>
         <div class="start-text text-color-s" onclick="startGame()">Click To Start!</div>
     </div>
       <!--Victory Text-->
-      <div class="victory-container hide">
-        <div class="victory-text text-color-p">Victory!</div>  
-        <a onclick="startGame()"><div class="start-text">Click To Restart</div></a> 
+    <div class="victory-container landing-text-container">
+        <div class="landing-text text-color-p">Victory!</div>  
+        <a onclick="startGame()"><div class="start-text text-color-s">Click To Restart</div></a> 
         <div>With <span class="score-overall"></span> flips</div>
-     </div>
+    </div>
       <!--Try Again Text-->
-      <div class="try-again-container">
-        <div class="try-again-text text-color-p">Try Again!</div>   
-            <a onclick="startGame()"><div class="start-text">Click To Restart</div></a> 
-        </div>
-    
+    <div class="try-again-container landing-text-container">
+        <div class="landing-text text-color-p">Try Again!</div>   
+            <a onclick="startGame()"><div class="start-text text-color-s">Click To Restart</div></a> 
+    </div>
     <!--Game details container for timer, flips and user name-->
         <div class= "game-details">
             <!--Time-->
@@ -123,27 +121,8 @@
                 <div class="grid-item back-card"><img src="assets/images/back.PNG" alt="Card-1" class="card"></div>
                 <div class="grid-item front-card"><img src="assets/images/card8.PNG" alt="Card-8" class="card deck-card"></div>
             </div>
-
-
-
-
-
-
-
-
-            
-
-
-       
-
-
-
         </div>
-    
     </div>
-
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
