@@ -7,7 +7,7 @@ html {
     text-align: center;
     font-size: 6.5em;
     margin: 20px 0 20px 0;
-    z-index: 2;
+    z-index: 4;
     position: relative;
     bottom: 100px;
 }
@@ -19,7 +19,7 @@ html {
     position: fixed;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 4;
 }
 
 .hide {
@@ -37,7 +37,7 @@ html {
     height: 100%;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
     background-color: #0a0909d6;
 }
 
@@ -103,6 +103,22 @@ html {
 
 .text-color-s {
     color: rgb(246, 234, 176);
+}
+
+#flip-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    right: 0;
+    text-align: center;
+    justify-content: center;
+    z-index: 2;
+    font-size: 3em;
+    cursor: pointer; 
+}
+
+#victory-text{
+    
 }
 
 .start-container {
