@@ -1,5 +1,5 @@
 html {
-    background-color: black;
+    background-color: 	rgb(0, 0, 0);
     font-family: 'Playball', cursive;
 }
 
@@ -23,7 +23,7 @@ html {
 }
 
 .hide {
-    display: none;
+    visibility: hidden!important;
     z-index: 0;
 }
 
@@ -33,14 +33,19 @@ html {
 }
 
 .overlay {
+    visibility:visible;
     position: fixed;
     height: 100%;
     left: 0;
     right: 0;
     z-index: 3;
-    background-color: #0a0909d6;
+    background-color: rgb(10, 9, 9, 0.9);
 }
 
+
+#victory-text{
+    z-index: 5;
+}
 
 .card {
     height:200px;
@@ -53,6 +58,7 @@ html {
     position: relative;
     width: 100px;
     height: 175px;
+    cursor: pointer;
 }
 
 .grid-item {
