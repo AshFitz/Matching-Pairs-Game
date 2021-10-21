@@ -3,7 +3,7 @@ html {
     font-family: 'Playball', cursive;
 }
 
-#landing-text {
+.landing-text {
     text-align: center;
     font-size: 6.5em;
     margin: 20px 0 20px 0;
@@ -13,7 +13,7 @@ html {
 }
 
 .landing-text-container {
-    height: 100%;
+    height: 75%;
     width: 100%;
     display: flex;
     position: fixed;
@@ -83,7 +83,10 @@ html {
 }
 
 .start-text {
-    position: inherit;
+    position: absolute;
+    left: 0;
+    right: 0;
+    right: 0;
     text-align: center;
     justify-content: center;
     z-index: 2;
@@ -107,11 +110,11 @@ html {
 }
 
 .victory-container{
-    display: none;
+   
 }
 
 .try-again-container {
-    display: none;
+    
 }
 
 .pop-up-text .restart-text {
