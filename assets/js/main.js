@@ -1,10 +1,10 @@
 // Global scope Variables
 let cards = Array.from(document.getElementsByClassName('cards'));
 let overlay = document.getElementsByClassName('overlay')[0];
-let tryAgainText = document.getElementsByClassName('try-again-container')[0];
-let victoryText = document.getElementsByClassName('victory-container')[0];
-let overallScore = document.getElementsByClassName('score-overall')[0]
 let startContainer = document.getElementsByClassName('start-container')[0];
+let tryAgainText = document.getElementsByClassName('try-again-container')[0];
+let victoryContainer = document.getElementsByClassName('victory-container')[0];
+let overallScore = document.getElementsByClassName('score-overall')[0]
 let flipCounter = document.getElementById('flips-counter');
 let timer = document.getElementById('game-timer');
 let flips;
@@ -20,11 +20,10 @@ let cardsArray = cards;
 function startGame() { 
     flips = 0;
     timeLeft = 90;
-    pairedCards;
+    pairedCards = [];
     resetCards();
     
-    tryAgainText.classList.remove('show');
-    victoryText.classList.remove('show')
+    
     // For each card found in cards array add an e listener when clicked call rotatecard func passing in the e card.
     cards.forEach((card) => {
             card.addEventListener('click', () => {
@@ -39,6 +38,8 @@ function startGame() {
             stopCounter = countdownTimer();
             overlay.classList.add('hide');
             startContainer.classList.add('hide');
+            victoryContainer.classList.add('hide');
+            tryAgainText.classList.add('hide');
         },1000)
 }
 
@@ -149,11 +150,10 @@ and and remove css classes for interactions and update the overallscore innertex
 with the flips counter number.
 */
 function gameOver() {
-    //reset timer
     clearInterval(stopCounter);
     overlay.classList.remove("hide");
-    victoryText.classList.add('show');
     overallScore.innerText = flips;
+    victoryContainer.classList.remove("hide");
 }
 
 /* 
@@ -163,7 +163,7 @@ remove css to show engame overlay and show the try again text.
 function tryAgain(){
     clearInterval(stopCounter);
     overlay.classList.remove("hide");
-    tryAgainText.classList.add('show');
+    tryAgainText.classList.remove("hide");
 }
 
 /*
