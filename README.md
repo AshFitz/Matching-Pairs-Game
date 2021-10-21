@@ -98,6 +98,7 @@
 *<p> A restart game feature, so the user can replay the game after the game ends.</p>
 
 ### Features that will be implemented in the future:
+*<p> Smooth transitions with css to improve the user experience.</p>
 *<p> An option for the user to enter a username.</p>
 *<p> A leader board that holds the highest scoring players.</p>
 *<p> Audio, this would play at start game, victory and try again to increase the user experience.</p>
@@ -139,6 +140,13 @@
 *<p> As a user I expect to be made aware if the timer runs out. This test has passed as I am made aware I need to try again.</p>
 *<p> As a user I expect to know how I performed when the game is over. This test has passed as the I am made aware if I have succeeded and completed the game before the timer ran out.</p>
 
+<p> This game was validated using a HTML, CSS validator and jshint. An additional Lighthouse audit was conducted via chrome dev tools. This helped to improve best practices and performance.</p>
+
+![Lighthouse](https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/LighthouseTest.PNG)
+
+<p> You can find an image to the html validation conducted <a href="https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/htmlValidator.JPG" target="_blank">here</a></p>
+
+<p> You can also find the css validation <a href="https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/cssvalidator.JPG">here</a></p>
 
 
 
@@ -149,6 +157,11 @@
 #1 after completing a game, restartin you could no longer click a card because the cards array was not being emptied.
 
 possible side case being, if playing mulitple games in a row array could fill as no clearing, would break game.
+
+I had a bug with my css, I attempted to improve the user experience with css transitions for when the hide class is added.
+I was able to simulate a fade with the visibility:hidden and visibility:visible, but the bug with this made the css transition very laggy and not very nice experience and would take away from the 
+rest of the game that was smooth. I decided to remove the transition for this release but if I had more time I would create a Show / hide class and transition between them.
+After researching the issue for a while, Hardware-Accelerated css practice would be best to follow.
 </p>
 
 ## Know Bugs
