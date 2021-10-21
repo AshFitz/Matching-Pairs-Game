@@ -103,9 +103,10 @@
 *<p> Audio, this would play at start game, victory and try again to increase the user experience.</p>
 
 ## Planning and Testing:
-<p></p>
-<p></p>
-<p></p>
+<p> The planning began by sketching the website on paper and then led to creating the wireframes. Creating the wireframes really helped me plan this project. It layed out what I wanted to achieve and you could visually see what would work and what wouldn't work.</p>
+<p> I started by adding the basic strucutre to the html and then adding my placeholder cards and styling the grid. I then continued onto each section seperatly using a check list to make sure I was making progress and not vering from the overall objectives.</p> 
+<p> I then selected the desired images to use for the cards, to really portray the theme of the game.</p>
+<p> A part of my planning was using <a href="https://coolors.co/" target="_blank">coolors</a> to chose the correct colour palette.</p>
 
 #### Feature Testing:
 
