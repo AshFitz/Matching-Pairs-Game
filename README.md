@@ -85,20 +85,22 @@
 </p>
 
 ### Wireframes: 
-<p>
+<p> 
 </p>
 
 ## Features:
 
 ### Features that have been developed:
-*<p></p>
-*<p></p>
-*<p></p>
+*<p> A timer, the user must work to complete the game before the time runs out.</p>
+*<p> A flip counter, to show the user how many flips it took them to complete the game.</p>
+*<p> A feature to prevent the user from clicking more cards while the current cards are being checked for a match.</p>
+*<p> A start game feature, to begin the game for the user.</p>
+*<p> A restart game feature, so the user can replay the game after the game ends.</p>
 
 ### Features that will be implemented in the future:
-*<p></p>
-*<p></p>
-*<p></p>
+*<p> An option for the user to enter a username.</p>
+*<p> A leader board that holds the highest scoring players.</p>
+*<p> Audio, this would play at start game, victory and try again to increase the user experience.</p>
 
 ## Planning and Testing:
 <p></p>
