@@ -40,7 +40,7 @@ function startGame() {
             startContainer.classList.add('hide');
             victoryContainer.classList.add('hide');
             tryAgainText.classList.add('hide');
-        },1000);
+        },750);
 }
 
 
