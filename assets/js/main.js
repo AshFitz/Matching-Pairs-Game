@@ -4,7 +4,7 @@ let overlay = document.getElementsByClassName('overlay')[0];
 let startContainer = document.getElementsByClassName('start-container')[0];
 let tryAgainText = document.getElementsByClassName('try-again-container')[0];
 let victoryContainer = document.getElementsByClassName('victory-container')[0];
-let overallScore = document.getElementsByClassName('score-overall')[0]
+let overallScore = document.getElementsByClassName('score-overall')[0];
 let flipCounter = document.getElementById('flips-counter');
 let timer = document.getElementById('game-timer');
 let flips;
@@ -29,7 +29,7 @@ function startGame() {
             card.addEventListener('click', () => {
                 rotateCard(card);
             });
-        })
+        });
 
     // Setimeout created to delay for a second, allow for shuffle of cards and start the time remaining timer and can click boolean.    
     setTimeout(() => {
@@ -40,7 +40,7 @@ function startGame() {
             startContainer.classList.add('hide');
             victoryContainer.classList.add('hide');
             tryAgainText.classList.add('hide');
-        },1000)
+        },1000);
 }
 
 
@@ -56,7 +56,7 @@ function rotateCard(card) {
         card.classList.add('visible');
 
         if(verifyCard)
-            checkCardsMatch(card)
+            checkCardsMatch(card);
         else
             //assign current card (card) to the verify card
             verifyCard = card;
@@ -78,9 +78,8 @@ function countdownTimer() {
     return setInterval(() => {
             timeLeft--;
             timer.innerText = timeLeft;
-            console.log(timer)
             if (timeLeft == 0)
-                tryAgain()
+                tryAgain();
         },1000);
 }
 
@@ -88,7 +87,7 @@ function countdownTimer() {
 function resetCards() {
     cardsArray.forEach(item =>{
         item.classList.remove('visible');
-    })
+    });
 }
 
 /*
@@ -129,7 +128,7 @@ function cardsDontMatch(card1, card2) {
         card1.classList.remove('visible');
         card2.classList.remove('visible');
         canClick = false;
-    },1000)
+    },1000);
 }
 
 /*
