@@ -111,8 +111,38 @@
 #### Feature Testing:
 
 ### Testing 
-<p>  The testing carried out on this project was conducted using google chrome dev tools and basic user testing by myself to verify functionality. I originally built this project to be on a desktop screen and then tablet and then mobile. Testing was done throughout using the console and consol.logs within my js.
+<p> The testing carried out on this project was conducted using google chrome dev tools and basic user testing by myself to verify functionality. I originally built this project to be on a desktop screen and then tablet and then mobile. Testing was done throughout using the console and console.logs within my js. All testing was validated when each feature was added to confirm the functionality had not changed after a significant piece of code or change was added.
 </p>
+
+<p> The areas this project should be most visible on are as follows.
+
+- Iphone 6/7/8
+- Iphone 6/7/8 plus
+
+- Iphone x
+- Ipad
+- Ipad pro
+
+- small laptop 1280 x 802
+- 24 inch screen - 1920 x 1080
+- 1440p screen 2560 x 1440
+</p>
+
+### User Testing
+*<p> As a user who lands on the main page, I expect the heading of the game to give me an indication on what is required. This test passed as the heading explains I must try to find the matching pairs.</p>
+*<p> As a user I then expect to see an option to start the game. This test has passed as it loads the card and the timer begins.</p>
+*<p> As a user I expect the cards to flip when the are clicked. This test has passed as the cards roatate once they are clicked.</p>
+*<p> As a user I expect it to be clear when two cards are match. This test has passed as the matched cards stay visable to indicate a match and they can no longer be clicked.<p>
+*<p> As a user I expect it to be clear when two cards do not match. This test hass passed the the cards that do not match rotate back and they can be clicked again.</p>
+*<p> As a user I expect to be working against a timer. This test has passed, as soon I select to start the game the timer counds down from 90 seconds.</p>
+*<p> As a user I expect to see how many flips I have used while the game is in progress. This test has passed as the flip counter increases each time a card is selected.</p>
+*<p> As a user I expect to be made aware if the timer runs out. This test has passed as I am made aware I need to try again.</p>
+*<p> As a user I expect to know how I performed when the game is over. This test has passed as the I am made aware if I have succeeded and completed the game before the timer ran out.</p>
+
+
+
+
+
 
 ### Bugs
 <p>
