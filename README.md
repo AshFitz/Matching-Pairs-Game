@@ -72,16 +72,16 @@
 *
 
 ### Colours:
-<p>
+<p> I chose the colours below as they suit the theme of the game, which is tarot cards. They compliment themselves along with the images used for the cards. The content is clearly readable and the site navigates well due to the colours. It increases the appeal of the game and the user experience.
 </p>
 
-* Primary Colour:
-* Secondary Colour
-* Tertiary Colour:
-* Quaternary Colour:
+* Primary Colour: rgb(209, 179, 112) - Pastel gold, This is used for the heading, the victory text, try again text and the border colour for the card images.
+* Secondary Colour: rgb(246, 234, 176) - Cream, This is used for the click to start text and the click to restart text.
+* Background Colour: rgb(0, 0, 0) - Black, This is used for the overall background colour.
+* Background Overlay Colour: rgb(10, 9, 9, 0.9) - Black opacity, this color is used for the backgorund overlay.
 
 ### Images: 
-<p>
+<p> The images I used in the game complimented the colours used. The images were in contrast with the theme of tarot cards. The images were sourced from <a href="https://www.pinterest.com/" target="_blank">Pintrest</a>
 </p>
 
 ### Wireframes: 
@@ -113,6 +113,9 @@
 
 ### Bugs
 <p>
+#1 after completing a game, restartin you could no longer click a card because the cards array was not being emptied.
+
+possible side case being, if playing mulitple games in a row array could fill as no clearing, would break game.
 </p>
 
 ## Know Bugs
