@@ -220,3 +220,34 @@ and (max-height: 812px){
     }
     
 }
+
+/* Iphone 6/7/8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) {
+    .landing-text-container{
+        height: 80%;
+        color:purple;
+    }
+    
+    .landing-text{ 
+        font-size: 3.5em;
+    }
+
+    .start-text {
+        font-size: 2.3em;
+    }
+
+    .grid-container{
+        overflow: hidden;
+        grid-template-rows: repeat(4, 140px);
+        grid-column-gap: 3px;
+        grid-template-columns: repeat(4, 87px);
+        padding-top: 25px;
+    }
+
+    .card { 
+        height: 130px;
+    }
+}
+
