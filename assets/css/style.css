@@ -166,3 +166,11 @@ and (max-width: 1280px) {
         height:150px;
     }
 }
+
+/* standard Ipad*/
+@media only screen 
+and (max-device-width:1200px){
+    .landing-text-container {
+        height: 75%;
+    }
+}
