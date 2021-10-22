@@ -115,8 +115,9 @@
 <p> The testing carried out on this project was conducted using google chrome dev tools and basic user testing by myself to verify functionality. I originally built this project to be on a desktop screen and then tablet and then mobile. Testing was done throughout using the console and console.logs within my js. All testing was validated when each feature was added to confirm the functionality had not changed after a significant piece of code or change was added.
 </p>
 
-<p> The areas this project should be most visible on are as follows.
+<p> The areas this project should be most visible on are as follows. (To note, all testing on device sizing was done via chrome dev tools, 1 physical android device was tested and 1 iphone device was tested, showing minor bugs which have now been resolved.)
 
+- Iphone 5 5/se
 - Iphone 6/7/8
 - Iphone 6/7/8 plus
 
@@ -150,29 +151,34 @@
 
 
 
-
-
 ### Bugs
-<p>
-#1 after completing a game, restartin you could no longer click a card because the cards array was not being emptied.
+* <p> When a game was completed and you clicked on "Click to restart", you could no longer click a card. This was because the cards array was not being emptied. If a user played mulitple games in a row and did not pair enought cards within the time limit, it could have been a possibility the game would break.</p>
 
-possible side case being, if playing mulitple games in a row array could fill as no clearing, would break game.
-
-I had a bug with my css, I attempted to improve the user experience with css transitions for when the hide class is added.
-I was able to simulate a fade with the visibility:hidden and visibility:visible, but the bug with this made the css transition very laggy and not very nice experience and would take away from the 
-rest of the game that was smooth. I decided to remove the transition for this release but if I had more time I would create a Show / hide class and transition between them.
-After researching the issue for a while, Hardware-Accelerated css practice would be best to follow.
+* <p> I had a bug within my css. I attempted to improve the user experience with css transitions for when the hide class is added. I was able to simulate a fade with the visibility:hidden and visibility:visible. However the bug caused the css transition to be very laggy. This didn't create a good user experience. I decided to remove the transition for this release. If I had more time I would create a Show / hide class and transition between them. After researching the issue for a while, Hardware-Accelerated css practice would be best to follow.
 </p>
+
+* <p> I had an bug trying to shuffle the cards within js. The cards were not shuffling properly. The issue was caused when both pairs of cards were within the one container div. To resolve this bug each card is within their own container div.</p>
 
 ## Know Bugs
 <p>
+At present the biggest bug I found was on the victory screen the Anchor tag click area spans over the text above it. I did not have enough time on hand to rectify this bug, but I am fully aware of it and would with more time resolve issues like this.
+
+There is one bug currently ongoing, the solution for switching cards with backface-visibility is not currently supported by IOS or safari, I have been able to re-produce a bug where the cards are showing on IOS and safari, and even chrome browsers on IOS. The only solution I could come up with was using the webkit -webkit-backface-visibility: hidden; attribute, this resolved the issue of the showing cards. However the card does not flip or spin as smoothely as it does in windows chrome dev tools with a screen break point for IOS sized phones.
 </p>
 
 ### References
 <p>
+Zack Wilson - for his solution on card flips
+Florin Pop
+Webdev Simplified
+Wikipedia - Fisher Yates shuffle array
+IOS backface visibility resolution - <a href="https://stackoverflow.com/questions/42744573/backface-visibility-not-working-in-safari">Here</a>.
 </P>
 
 ### Acknowledgements
 <p>
+I would to say a big thank you to my mentor Gerry McBride, for his support and constant feedback throughout developing the website.
+
+This project is for educational purposes only. It was created as a second milestone project for Code Institutes full stack web development course.
 </p>
 
