@@ -174,10 +174,10 @@ There is one bug currently ongoing, the solution for switching cards with backfa
 
 ### References
 <p>
-Zack Wilson - for his solution on card flips
-Florin Pop
-Webdev Simplified
-Wikipedia - Fisher Yates shuffle array
+Zack Wilson - for his solution on card flips <br>
+Florin Pop <br>
+Webdev Simplified <br>
+Wikipedia - Fisher Yates shuffle array <br>
 IOS backface visibility resolution - <a href="https://stackoverflow.com/questions/42744573/backface-visibility-not-working-in-safari">Here</a>.
 </P>
 
