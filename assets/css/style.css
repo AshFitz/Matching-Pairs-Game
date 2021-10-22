@@ -62,6 +62,16 @@ html {
     margin: auto;
 }
 
+.start-text:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#victory-text:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
 .text-color-p {
     color: rgb(209, 179, 112);
 }
