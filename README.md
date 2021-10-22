@@ -59,7 +59,7 @@
 </p>
 
 ### Theme:
-<p> I chose a particular theme for this game which is tarot card themed. This is an elegant an unquie theme. It has a playful spin on the cards aspect of the game. 
+<p> I chose a particular theme for this game which is tarot card themed. This is an elegant and unquie theme. It has a playful spin on the cards aspect of the game. 
 </p>
 
 
@@ -72,10 +72,10 @@
  <p> I chose the colours below as they suit the theme of the game, which is tarot cards. They compliment themselves along with the images used for the cards. The content is clearly readable and the site navigates well due to the colours. It increases the appeal of the game and the user experience.
 </p>
 
-* Primary Colour: rgb(209, 179, 112) - Pastel gold, This is used for the heading, the victory text, try again text and the border colour for the card images.
-* Secondary Colour: rgb(246, 234, 176) - Cream, This is used for the click to start text and the click to restart text.
-* Background Colour: rgb(0, 0, 0) - Black, This is used for the overall background colour.
-* Background Overlay Colour: rgb(10, 9, 9, 0.9) - Black opacity, this color is used for the backgorund overlay.
+* Primary Colour: ``` rgb(209, 179, 112) ``` - Pastel gold, This is used for the heading, the victory text, try again text and the border colour for the card images.
+* Secondary Colour: ``` rgb(246, 234, 176) ``` - Cream, This is used for the click to start text and the click to restart text.
+* Background Colour: ``` rgb(0, 0, 0) ``` - Black, This is used for the overall background colour.
+* Background Overlay Colour: ``` rgb(10, 9, 9, 0.9) ``` - Black opacity, this color is used for the backgorund overlay.
 
 ### Images: 
 <p> The images I used in the game complimented the colours used. The images were in contrast with the theme of tarot cards. The images were sourced from <a href="https://www.pinterest.com/" target="_blank">Pintrest</a>
@@ -160,7 +160,7 @@
 ### Bugs
 * <p> When a game was completed and you clicked on "Click to restart", you could no longer click a card. This was because the cards array was not being emptied. If a user played mulitple games in a row and did not pair enought cards within the time limit, it could have been a possibility the game would break.</p>
 
-* <p> I had a bug within my css. I attempted to improve the user experience with css transitions for when the hide class is added. I was able to simulate a fade with the visibility:hidden and visibility:visible. However the bug caused the css transition to be very laggy. This didn't create a good user experience. I decided to remove the transition for this release. If I had more time I would create a Show / hide class and transition between them. After researching the issue for a while, Hardware-Accelerated css practice would be best to follow.
+* <p> I had a bug within my css. I attempted to improve the user experience with css transitions for when the hide class is added. I was able to simulate a fade with the visibility:hidden  and visibility:visible. However the bug caused the css transition to be very laggy. This didn't create a good user experience. I decided to remove the transition for this release. If I had more time I would create a Show / hide class and transition between them. After researching the issue for a while, Hardware-Accelerated css practice would be best to follow.
 </p>
 
 * <p> I had an bug trying to shuffle the cards within js. The cards were not shuffling properly. The issue was caused when both pairs of cards were within the one container div. To resolve this bug each card is within their own container div.</p>
