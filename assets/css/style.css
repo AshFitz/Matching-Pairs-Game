@@ -260,6 +260,11 @@ and (max-height: 812px){
     .card { 
         height: 130px;
     }
+    
+    .cards {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 /* Iphone 6/7/8 plus*/
@@ -298,6 +303,11 @@ and (max-width : 568px) {
     
     .card {
         height: 100px;
+    }
+
+    .cards {
+        height: 100%;
+        width: 100%;
     }
 
     #flip-text{
