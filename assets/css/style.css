@@ -174,3 +174,14 @@ and (max-device-width:1200px){
         height: 75%;
     }
 }
+
+/* Ipad pro */
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-height: 1366px) 
+and (-webkit-min-device-pixel-ratio: 2)  
+and (orientation: portrait)  {
+    .landing-text-container {
+        height: 55%;
+    }
+}
