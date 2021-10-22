@@ -7,7 +7,7 @@ let victoryContainer = document.getElementsByClassName('victory-container')[0];
 let overallScore = document.getElementsByClassName('score-overall')[0];
 let flipCounter = document.getElementById('flips-counter');
 let timer = document.getElementById('game-timer');
-let flips;
+let flips = 0;
 let timeLeft;
 let pairedCards = [];
 let verifyCard = null;
@@ -18,11 +18,11 @@ let cardsArray = cards;
 
 // Start game function to initialise the components for the game
 function startGame() { 
-    flips = 0;
     timeLeft = 90;
+    flips = 0
     pairedCards = [];
     resetCards();
-    
+    flipCounter.innerText = flips;
     
     // For each card found in cards array add an e listener when clicked call rotatecard func passing in the e card.
     cards.forEach((card) => {
@@ -40,6 +40,7 @@ function startGame() {
             startContainer.classList.add('hide');
             victoryContainer.classList.add('hide');
             tryAgainText.classList.add('hide');
+            flipCounter.innerText = flips;
         },750);
 }
 
