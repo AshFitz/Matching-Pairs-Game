@@ -64,7 +64,7 @@
 
 
 ### Fonts: 
-* (https://fonts.googleapis.com/css2?family=Playball&display=swap)
+* [Playball](https://fonts.google.com/specimen/Playball)
 <p> I chose this font for the game as it is really suits the theme and compliments the color scheme and content well.
 </p>
 
