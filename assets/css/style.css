@@ -143,6 +143,8 @@ html {
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
+    -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
 }
 
 
