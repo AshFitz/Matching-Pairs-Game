@@ -148,4 +148,21 @@ html {
 
 /* Media Quires */
 
+/* Small to medium sized laptop sizing */
+@media screen 
+and (max-width: 1280px) {
+    
+    .landing-text-container {
+        height: 90%;
+        color: purple;
+    }
+    
+    .grid-container{
+        grid-column-gap: 14px;
+        grid-row-gap: 0px;
+    }
 
+    .card {
+        height:150px;
+    }
+}
