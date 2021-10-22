@@ -68,9 +68,6 @@
 <p> I chose this font for the game as it is really suits the theme and compliments the color scheme and content well.
 </p>
 
-### Icons:
-*
-
 ### Colours:
  <p> I chose the colours below as they suit the theme of the game, which is tarot cards. They compliment themselves along with the images used for the cards. The content is clearly readable and the site navigates well due to the colours. It increases the appeal of the game and the user experience.
 </p>
@@ -85,8 +82,17 @@
 </p>
 
 ### Wireframes: 
-<p> 
-</p>
+
+[Desktop Wireframe](https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/Desktop.png) <br>
+[Tablet Wireframe](https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/Tablet.png) <br>
+[Mobile Wireframe](https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/Mobile.png) <br>
+[Desktop Overlay Wireframe](https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/Desktop_overlay_splash.png) <br>
+[Mobile Overlay Wireframe](https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/mobile_overlay_splash.png)<br>
+[Desktop Overlay Game over](https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/Desktop_game_completed.png)<br>
+[Tablet Overlay Game over](https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/tablet_game_completed.png)<br>
+[Mobile Overlay Game over](https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/mobile_game_completed.png)
+
+
 
 ## Features:
 
