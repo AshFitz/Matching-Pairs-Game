@@ -3,6 +3,10 @@
 <p> This game was created to test a users memory in a fun and interactive way. The user will be playing against a timer to match all the pairs of cards. It will also provide the user with the amount of flips they used to accomplish the game. The user will be able to play the game multiple times to try and achieve a better time and a lower number of flips. The target audience is for people who want to play a game online and test their memory.
 </p>
 
+![The Gluten Free Garden](https://github.com/AshFitz/Matching-Pairs-Game/blob/main/assets/images/wireframes/responsive_images.JPG)
+
+
+
 ## User Experience:
 
 ### Project Goals:
