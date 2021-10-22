@@ -19,23 +19,24 @@
 
     <!--Overall container-->
     <div class= "overall-container">
-    <!--Start Game-->
-    <div class="start-container landing-text-container">
-        <h1 class="text-color-p landing-text">Match The Pairs</h1>
-        <div class="start-text text-color-s" onclick="startGame()">Click To Start!</div>
-    </div>
-      <!--Victory Text-->
-    <div class="victory-container landing-text-container hide">
-        <div class="landing-text text-color-p">Victory!</div>  
-        <div class="text-color-p" id="flip-text">With <span class="score-overall"></span> flips</div>
-        <a class="text-color-s" id="victory-text" onclick="startGame()"><div >Click To Restart</div></a>  
-    </div>
-      <!--Try Again Text-->
-    <div class="try-again-container landing-text-container hide">
-        <div class="landing-text text-color-p">Try Again!</div>   
-            <a onclick="startGame()"><div class="start-text text-color-s">Click To Restart</div></a> 
-    </div>
-    <!--Game details container for timer, flips and user name-->
+        <!--Start Game-->
+        <div class="start-container landing-text-container">
+            <h1 class="text-color-p landing-text">Match The Pairs</h1>
+            <div class="start-text text-color-s" onclick="startGame()">Click To Start!</div>
+        </div>
+        <!--Victory Text-->
+        <div class="victory-container landing-text-container hide">
+            <div class="landing-text text-color-p">Victory!</div>  
+            <a class="text-color-s" id="victory-text" onclick="startGame()"><div >Click To Restart</div></a> 
+            <div class="text-color-p" id="flip-text">With <span class="score-overall"></span> flips</div>
+        </div>
+     
+        <!--Try Again Text-->
+        <div class="try-again-container landing-text-container hide">
+            <div class="landing-text text-color-p">Try Again!</div>   
+                <a onclick="startGame()"><div class="start-text text-color-s">Click To Restart</div></a> 
+        </div>
+        <!--Game details container for timer, flips and user name-->
         <div class= "game-details">
             <!--Time-->
             <div class="timer">Time <span id="game-timer">90</span></div>
