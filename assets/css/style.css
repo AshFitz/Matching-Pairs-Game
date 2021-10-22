@@ -251,3 +251,26 @@ and (max-height: 812px){
     }
 }
 
+/* Iphone 6/7/8 plus*/
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3){ 
+
+    .grid-container{
+        overflow: hidden;
+        grid-template-rows: repeat(4, 150px);
+        grid-column-gap: 0;
+        grid-template-columns: repeat(4, 95px);
+        padding-top: 25px;
+    }
+    
+    .card {
+        height: 130px;
+    }
+
+    .cards {
+        height: 100%;
+        width: 100%;
+    }
+}
