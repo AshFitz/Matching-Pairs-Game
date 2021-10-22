@@ -274,3 +274,31 @@ and (max-height: 812px){
         width: 100%;
     }
 }
+
+/* Iphone 5 / 5se only */
+@media screen and (device-aspect-ratio: 40/71) {
+    .grid-container{
+        overflow: hidden;
+        grid-template-rows: repeat(4, 110px);
+        grid-column-gap: 0;
+        grid-template-columns: repeat(4, 70px);
+        padding-top: 25px;
+    }
+    
+    .card {
+        height: 100px;
+    }
+
+    #flip-text{
+        font-size: 2.6em;
+    }
+
+    #victory-text{
+        z-index: 5;
+        position: absolute;
+        cursor: pointer;
+        font-size: 2.6em;
+        margin: auto;
+        padding-top: 165px;
+    }
+}
